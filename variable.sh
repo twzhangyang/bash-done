@@ -2,7 +2,7 @@
 
 set
 echo UID: $UID
-
+echo VERSION: $BASH_VERSION
 echo "The cost of the item is \$15"
 
 var1=10
@@ -18,5 +18,7 @@ echo "today is $testing1"
 today=$(date +%y%m%d)
 
 echo "today is $today"
+
+echo $?
 
 
