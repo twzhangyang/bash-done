@@ -112,9 +112,46 @@ fi
 
 # && ||
 
-if [ -d $HOME ] && [ -w $HOME/testing]
+if [ -d $HOME ] && [ -w $HOME/testing ]
 then 
     echo "The file exists and you can write to it"
 else
     echo "I cannot write to the file"
 fi
+
+# (())
+val1=10
+if (( $val1 ** 2 > 90 ))
+then
+    (( val2 = $val1 ** 2 ))
+    echo "The square of $val1 is $val2"
+fi
+
+# [[ ]]
+if [[ $USER == r** ]]
+then 
+    echo "Hello $USER"
+else 
+    echo "Sorry, I do not know you"
+fi
+
+# case
+if [ $USER = "rich" ]
+then
+    echo "Welcome $USER"
+    echo "Please enjoy your visit"
+elif [ $USER = "barbara" ]
+then
+    echo "Welcome $USER"
+fi
+
+case $USER in 
+rich | barbara)
+    echo "Welcome, $USER";;
+testing)
+    echo "Special testing account";;
+jessica)
+    echo "Do not forget to log off when you're done";;
+*)
+    echo "Sorry, you are not allowed here";;
+esac
