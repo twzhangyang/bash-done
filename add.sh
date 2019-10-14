@@ -43,7 +43,7 @@ else
 fi 
 
 # $* $@
-echo 
+echo  
 count=1
 for param in "$*"
 do 

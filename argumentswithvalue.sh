@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#./option.sh -a -b value -c -d
+#./option.sh -a -b value -c -d -- test1 test2
 echo 
 while [ -n "$1" ]
 do 
@@ -16,3 +16,11 @@ do
     esac
     shift
 done 
+
+count=1
+for param in "$@"
+do 
+    echo "Parameter #$count: $param"
+    count=$[ $count + 1 ]
+done 
+
