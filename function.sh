@@ -62,3 +62,4 @@ function func8 {
     local temp=$[ $value + 5 ]
     result=$[ $temp * 2 ]
 }
+
