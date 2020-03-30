@@ -10,14 +10,7 @@ else
     echo "The user $testuser does not exist on this user"
 fi
 
-var="full"
 
-if test $var
-then 
-    echo "The $var expression returns a true"
-else 
-    echo "The $var expression returns a false"
-fi
 
 #number
 value=10

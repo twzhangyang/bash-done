@@ -8,7 +8,7 @@ then
 else 
     echo "The $var expression returns a false"
 fi
-
+ 
 testuser=rich
 
 if [ "rich" = $testuser ]
